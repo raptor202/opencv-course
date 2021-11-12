@@ -59,7 +59,7 @@ labels = to_categorical(labels, len(characters))
 
 
 # Creating train and validation data
-x_train, x_val, y_train, y_val = caer.train_test_split(featureSet, labels, val_ratio=.2)
+x_train, x_val, y_train, y_val = caer.train_val_split(featureSet, labels, val_ratio=.2)
 
 # Deleting variables to save memory
 del train
